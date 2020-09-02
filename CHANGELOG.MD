@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Bugfixes
 
+- Login now clears the local storage, so that you can log into a different server
+even if not logged out properly.
 - The code wasn't shipped properly when publishing a non-dev release to NPMJS.
 
 ## [0.1.0] - 2020-08-10
