@@ -189,6 +189,7 @@ export default class StorageUtility implements IStorageUtility {
     key: string,
     options?: { secure?: boolean }
   ): Promise<void> {
+    console.log(`Deleting ${key} for user ${userId} from storage`);
     const userData = await this.getUserData(userId, options?.secure);
     delete userData[key];
     await this.setUserData(userId, userData, options?.secure);
@@ -198,6 +199,7 @@ export default class StorageUtility implements IStorageUtility {
     userId: string,
     options?: { secure?: boolean }
   ): Promise<void> {
+    console.log(`Deleting user ${userId} from storage`);
     await (options?.secure ? this.secureStorage : this.insecureStorage).delete(
       this.getKey(userId)
     );
