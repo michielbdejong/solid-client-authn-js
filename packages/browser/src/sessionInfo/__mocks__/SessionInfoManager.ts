@@ -23,7 +23,7 @@ import {
   ISessionInfoManager,
   ISessionInfoManagerOptions,
 } from "../SessionInfoManager";
-import ISessionInfo from "../ISessionInfo";
+import { ISessionInfo } from "@inrupt/solid-client-authn-core";
 
 export const SessionCreatorCreateResponse: ISessionInfo = {
   sessionId: "global",

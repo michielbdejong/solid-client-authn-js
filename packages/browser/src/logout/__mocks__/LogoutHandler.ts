@@ -19,7 +19,7 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import ILogoutHandler from "../ILogoutHandler";
+import { ILogoutHandler } from "@inrupt/solid-client-authn-core";
 
 export const LogoutHandlerMock: jest.Mocked<ILogoutHandler> = {
   canHandle: jest.fn(async (_localUserId: string) => true),
