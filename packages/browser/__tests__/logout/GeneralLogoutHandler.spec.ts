@@ -19,11 +19,11 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+import "reflect-metadata";
 import {
   StorageUtilityMock,
   mockStorageUtility,
-} from "../../src/storage/__mocks__/StorageUtility";
-import "reflect-metadata";
+} from "@inrupt/solid-client-authn-core";
 import { default as LogoutHandler } from "../../src/logout/GeneralLogoutHandler";
 
 describe("OidcLoginHandler", () => {

@@ -24,10 +24,12 @@
  * @packageDocumentation
  */
 
-import { ILogoutHandler } from "@inrupt/solid-client-authn-core";
+import {
+  ILogoutHandler,
+  IStorageUtility,
+} from "@inrupt/solid-client-authn-core";
 
 import { inject, injectable } from "tsyringe";
-import { IStorageUtility } from "../storage/StorageUtility";
 
 /**
  * @hidden
